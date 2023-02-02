@@ -32,14 +32,18 @@ export default function Home() {
         {/*Price Box*/}
         <Box
           display={['block', 'block', 'flex']}
-          mx="20px"
+          alignItems={['', '', 'center']}
+          mx={['20px', '20px', 'auto']}
           mt="-140px"
-          pb="35px"
+          mb="35px"
+          maxW="994px"
+          width={['', '', '95%']}
           borderRadius="12px"
           overflow="hidden"
           boxShadow="rgba(0, 0, 0, 0.55) 0px 2px 8px;"
+          bgColor="#fff"
         >
-          <Box bgColor="#F0EAFB" textAlign="center" py="35px" textColor="#171923">
+          <Box bgColor="#F0EAFB" textAlign="center" py={['35px', '', '80px']} textColor="#171923">
             <Heading as="h2" className={inter.className} fontSize="24px">
               Premium PRO
             </Heading>
@@ -56,6 +60,7 @@ export default function Home() {
               className={inter.className}
               fontWeight="400"
               fontSize="16px"
+              mx={['0px', '0px', '48px']}
               _hover={{
                 backgroundColor: '#503886',
               }}
@@ -63,8 +68,8 @@ export default function Home() {
               Get Started
             </Button>
           </Box>
-          <Box px="14px" bgColor="#fff" className={inter.className}>
-            <Text textColor="#2D3748" fontSize="18px" mt="35px">
+          <Box px="14px" pb="35px" className={inter.className}>
+            <Text textColor="#2D3748" fontSize="18px" mt={['35px', '', '0px']}>
               Access these features when you get this pricing package for your business.
             </Text>
             <Box display="flex" alignItems="center" mt="25px">
@@ -86,11 +91,19 @@ export default function Home() {
           </Box>
         </Box>
         {/*Last Section*/}
-        <Box mx="20px" mt="30px" className={inter.className} mb="140px">
-          <Text textColor="#171923" mb="10px">
+        <Box
+          display={['block', 'block', 'flex']}
+          alignItems={['', '', 'center']}
+          justifyContent={['', '', 'space-around']}
+          m={['30px 30px 140px', '', '0px auto']}
+          maxW="994px"
+          width={['', '', '95%']}
+          className={inter.className}
+        >
+          <Text textColor="#171923" mb={['10px', '', '0px']}>
             30 days money back Guarantree
           </Text>
-          <Text textColor="#171923" mb="10px">
+          <Text textColor="#171923" mb={['10px', '', '0px']} mx={['0px', '0px', '45px']}>
             No setup fees 100% hassle-free
           </Text>
           <Text textColor="#171923">No monthly subscription Pay once and for all</Text>
